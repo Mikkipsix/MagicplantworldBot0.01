@@ -1,9 +1,0 @@
-services:
-  - type: worker
-    name: iboga-order-bot
-    env: docker
-    plan: free
-    autoDeploy: true
-    envVars:
-      - key: BOT_TOKEN
-        sync: false
