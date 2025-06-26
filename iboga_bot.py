@@ -10,7 +10,7 @@ dp = Dispatcher(bot)
 
 # Google Sheets авторизация
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("google_credentials.json", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name("secrets/google_credentials.json", scope)
 client = gspread.authorize(creds)
 sheet = client.open_by_key("1HnYbGB2Mdv5Dczol8slVShPJUIJXaoj9QLu2k0wx354").sheet1
 
